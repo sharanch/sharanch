@@ -1,6 +1,7 @@
 - 👋 Hi, I’m @sharanch
 - 👀 I’m interested in full stack web devlopment
-- 🌱 I’m currently learning.
+- 🌱 I’m currently learning
+- ✔  I share code snippets from my study
 - 📫 How to reach me @ maguiret4@gmail.com
 
 <!---
