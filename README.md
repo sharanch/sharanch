@@ -1,7 +1,5 @@
 - 👋 Hi, I’m @sharanch
-- 👀 I’m interested in full stack web devlopment
-- 🌱 I’m currently learning
-- ✔  I share code snippets from my study
+- 👀 I'm an aspiring SRE currently working at Oracle as a Cloud Engineer
 - 📫 How to reach me @ maguiret4@gmail.com
 
 <!---
