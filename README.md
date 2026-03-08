@@ -13,6 +13,7 @@ I specialize in building self-healing, scalable infrastructure and making comple
 - **CI/CD & Automation:** Python, Jenkins, GitHub Actions, ArgoCD, 
 - **Databases:** PostgreSQL (High Availability, Streaming Replication, CNPG Operator), MySQL Galera
 - **Monitoring:** Prometheus, Grafana (Service Reliability & Alerting), Zabbix.
+- **AI:** Ollama, MCP and N8N.
 
 ---
 
