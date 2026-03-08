@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Sharan Chenna
+# Hi, I'm Sharan
 
 ### SRE | DevOps | Cloud Engineer 🇮🇳
 I specialize in building self-healing, scalable infrastructure and making complex distributed systems reliable. Currently focusing on Kubernetes-native automation and high-availability database architectures.
