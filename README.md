@@ -18,16 +18,9 @@ I specialize in building self-healing, scalable infrastructure and making comple
 
 ## 🏗️ What I'm Working On
 
-- **[HA-Database-on-K8s](https://github.com/sharanch):** Implementing 3-node PostgreSQL clusters with CloudNativePG, focusing on automated failover, leader election, and horizontal read-scaling.
+- **[HA-Database-on-K8s](https://github.com/sharanch/chaos-engineering):** Implementing 3-node PostgreSQL clusters with CloudNativePG, focusing on automated failover, leader election, and horizontal read-scaling.
 - **Chaos Engineering:** Experimenting with system resilience by simulating node failures and verifying recovery point objectives (RPO).
 - **Python for SRE:** Building automation scripts for infrastructure health checks and log analysis.
-
----
-
-## 📊 GitHub Stats
-
-![Sharan's GitHub stats](https://github-readme-stats.vercel.app/api?username=sharanch&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sharanch&layout=compact&theme=radical)
 
 ---
 
