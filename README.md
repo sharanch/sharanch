@@ -25,7 +25,7 @@ I specialize in building self-healing, scalable infrastructure and making comple
 ---
 
 ## ⚡ Fact Sheet
-- 🔭 **Experience:** About 3 years in the Cloud/SRE space.
+- 🔭 **Experience:** About 4 years in the Cloud/SRE and Private Cloud space.
 - 🌱 **Learning:** Currently mastering Distributed SQL and Point-in-Time Recovery (PITR) workflows.
 - 🎬 **Fun Fact:** Aspiring film analyst and Christopher Nolan fan.
 - 📫 **Reach me:** sharan.sre@gmail.com | [Portfolio](https://www.sharanch.dev)
