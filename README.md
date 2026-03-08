@@ -10,9 +10,9 @@ I specialize in building self-healing, scalable infrastructure and making comple
 - **Cloud & Infrastructure:** AWS (EKS, EC2, S3), Oracle Cloud Infrastructure (OCI).
 - **Orchestration:** Kubernetes (StatefulSets, Operators, Service Mesh).
 - **Infrastructure as Code:** Terraform, Ansible.
-- **CI/CD & Automation:** Python, Jenkins, GitHub Actions.
+- **CI/CD & Automation:** Python, Jenkins, GitHub Actions, ArgoCD, 
 - **Databases:** PostgreSQL (High Availability, Streaming Replication, CNPG Operator).
-- **Monitoring:** Prometheus, Grafana (Service Reliability & Alerting).
+- **Monitoring:** Prometheus, Grafana (Service Reliability & Alerting), Zabbix.
 
 ---
 
@@ -25,10 +25,10 @@ I specialize in building self-healing, scalable infrastructure and making comple
 ---
 
 ## ⚡ Fact Sheet
-- 🔭 **Experience:** 4+ years in the Cloud/SRE space.
+- 🔭 **Experience:** About 4 years in the Cloud/SRE space.
 - 🌱 **Learning:** Currently mastering Distributed SQL and Point-in-Time Recovery (PITR) workflows.
 - 🎬 **Fun Fact:** Aspiring film analyst and Christopher Nolan fan.
-- 📫 **Reach me:** maguiret4@gmail.com | [Portfolio](https://www.sharanch.dev)
+- 📫 **Reach me:** sharan.sre@gmail.com | [Portfolio](https://www.sharanch.dev)
 
 ---
 
