@@ -1,6 +1,6 @@
 # Hi, I'm Sharan
 
-### SRE | DevOps | Cloud Engineer 🇮🇳
+### SRE | DevOps | Cloud Engineer 
 I specialize in building self-healing, scalable infrastructure and making complex distributed systems reliable. Currently focusing on Kubernetes-native automation and high-availability database architectures.
 
 ---
@@ -11,7 +11,7 @@ I specialize in building self-healing, scalable infrastructure and making comple
 - **Orchestration:** Kubernetes (StatefulSets, Operators, Service Mesh).
 - **Infrastructure as Code:** Terraform, Ansible.
 - **CI/CD & Automation:** Python, Jenkins, GitHub Actions, ArgoCD, 
-- **Databases:** PostgreSQL (High Availability, Streaming Replication, CNPG Operator).
+- **Databases:** PostgreSQL (High Availability, Streaming Replication, CNPG Operator), MySQL Galera
 - **Monitoring:** Prometheus, Grafana (Service Reliability & Alerting), Zabbix.
 
 ---
