@@ -1,8 +1,42 @@
-- 👋 Hi, I’m @sharanch
-- 👀 I'm an aspiring SRE currently working at Oracle as a Cloud Operations Engineer
-- 📫 How to reach me @ sharan.sre@gmail.com
+# 👋 Hi, I'm Sharan Chenna
 
-<!---
-sharanch/sharanch is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+### SRE | DevOps | Cloud Engineer 🇮🇳
+I specialize in building self-healing, scalable infrastructure and making complex distributed systems reliable. Currently focusing on Kubernetes-native automation and high-availability database architectures.
+
+---
+
+## 🛠️ Tech Stack & Expertise
+
+- **Cloud & Infrastructure:** AWS (EKS, EC2, S3), Oracle Cloud Infrastructure (OCI).
+- **Orchestration:** Kubernetes (StatefulSets, Operators, Service Mesh).
+- **Infrastructure as Code:** Terraform, Ansible.
+- **CI/CD & Automation:** Python, Jenkins, GitHub Actions.
+- **Databases:** PostgreSQL (High Availability, Streaming Replication, CNPG Operator).
+- **Monitoring:** Prometheus, Grafana (Service Reliability & Alerting).
+
+---
+
+## 🏗️ What I'm Working On
+
+- **[HA-Database-on-K8s](https://github.com/sharanch):** Implementing 3-node PostgreSQL clusters with CloudNativePG, focusing on automated failover, leader election, and horizontal read-scaling.
+- **Chaos Engineering:** Experimenting with system resilience by simulating node failures and verifying recovery point objectives (RPO).
+- **Python for SRE:** Building automation scripts for infrastructure health checks and log analysis.
+
+---
+
+## 📊 GitHub Stats
+
+![Sharan's GitHub stats](https://github-readme-stats.vercel.app/api?username=sharanch&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sharanch&layout=compact&theme=radical)
+
+---
+
+## ⚡ Fact Sheet
+- 🔭 **Experience:** 4+ years in the Cloud/SRE space.
+- 🌱 **Learning:** Currently mastering Distributed SQL and Point-in-Time Recovery (PITR) workflows.
+- 🎬 **Fun Fact:** Aspiring film analyst and Christopher Nolan fan.
+- 📫 **Reach me:** maguiret4@gmail.com | [Portfolio](https://www.sharanch.dev)
+
+---
+
+"Simplicity is the prerequisite for reliability." — *Edsger W. Dijkstra*
