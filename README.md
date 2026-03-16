@@ -24,7 +24,7 @@ I specialize in building self-healing, scalable infrastructure and making comple
 
 ---
 
--AI-augmented workflows: Using LLMs locally (Ollama) and automation 
+- AI-augmented workflows: Using LLMs locally (Ollama) and automation 
 pipelines (N8N) to speed up incident triage, runbook generation, and 
 infra documentation - keeping the boring parts automated.
 
