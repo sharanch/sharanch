@@ -21,12 +21,7 @@ I specialize in building self-healing, scalable infrastructure and making comple
 - **[HA-Database-on-K8s](https://github.com/sharanch/chaos-engineering):** Implementing 3-node PostgreSQL clusters with CloudNativePG, focusing on automated failover, leader election, and horizontal read-scaling.
 - **Chaos Engineering:** Experimenting with system resilience by simulating node failures and verifying recovery point objectives (RPO).
 - **Python for SRE:** Building automation scripts for infrastructure health checks and log analysis.
-
----
-
-- AI-augmented workflows: Using LLMs locally (Ollama) and automation 
-pipelines (N8N) to speed up incident triage, runbook generation, and 
-infra documentation - keeping the boring parts automated.
+- **AI-augmented workflows:** Using LLMs locally (Ollama) and automation pipelines (N8N) to speed up incident triage, runbook generation, and infra documentation - keeping the boring parts automated.
 
 ---
 
