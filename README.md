@@ -5,7 +5,7 @@ I specialize in building self-healing, scalable infrastructure and making comple
 
 ---
 
-## 🛠️ Tech Stack & Expertise
+## Tech Stack & Expertise
 
 - **Cloud & Infrastructure:** AWS (EKS, EC2, S3), Oracle Cloud Infrastructure (OCI).
 - **Orchestration:** Kubernetes (StatefulSets, Operators, Service Mesh).
@@ -16,7 +16,7 @@ I specialize in building self-healing, scalable infrastructure and making comple
 
 ---
 
-## 🏗️ What I'm Working On
+## What I'm Working On
 
 - **[HA-Database-on-K8s](https://github.com/sharanch/chaos-engineering):** Implementing 3-node PostgreSQL clusters with CloudNativePG, focusing on automated failover, leader election, and horizontal read-scaling.
 - **Chaos Engineering:** Experimenting with system resilience by simulating node failures and verifying recovery point objectives (RPO).
@@ -25,7 +25,7 @@ I specialize in building self-healing, scalable infrastructure and making comple
 
 ---
 
-## ⚡ Fact Sheet
+## Fact Sheet
 -  **Experience:** About 4 years in the Cloud/SRE and Private Cloud space.
 -  **Learning:** Currently mastering Distributed Systems at scale, Reliability engineering and Operations
 -  **Fun Fact:** Aspiring film analyst and Christopher Nolan fan.
