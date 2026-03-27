@@ -29,7 +29,7 @@ I specialize in building self-healing, scalable infrastructure and making comple
 -  **Experience:** About 4 years in the Cloud/SRE and Private Cloud space.
 -  **Learning:** Currently mastering Distributed Systems at scale, Reliability engineering and Operations
 -  **Fun Fact:** Aspiring film analyst and Christopher Nolan fan.
--  **Reach me:** sharan.sre@gmail.com | [Portfolio](https://www.sharanch.dev)
+-  **Reach me:** me@sharanch.dev | [Portfolio](https://www.sharanch.dev)
 
 ---
 
