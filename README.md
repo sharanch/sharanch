@@ -1,4 +1,4 @@
-#Hi, I'm Sharan Chenna
+# Hi, I'm Sharan Chenna
 
 SRE · Platform Engineering · DevOps
 
