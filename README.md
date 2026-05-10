@@ -1,42 +1,68 @@
-# Hi, I'm Sharan Chenna
+# Hi, I'm Sharan
 
-SRE · Platform Engineering · DevOps
+I like understanding how things work — what happens when a kernel panics, why a distributed system splits, how a hypervisor schedules compute across bare metal. That curiosity is what pulled me into SRE and keeps me there.
 
-4+ years operating large-scale Linux and cloud infrastructure. First hire on Oracle OCI's CloudOps SRE team — automated 15+ manual runbooks via a Python CLI, cutting alarm resolution time from 45+ minutes to under 10. Currently building production-grade open source tooling in AIOps, Kubernetes observability, and cloud-native reliability engineering.
+4 years of operating infrastructure at scale — 2,500+ Linux servers at CtrlS, then OCI Compute at Oracle. I've been paged at 2am, dug through logs I didn't write, and learned that most incidents aren't mysterious — they're just noisy.
 
-me@sharanch.dev · [sharanch.dev](https://sharanch.dev) · Hyderabad, India
+Most engineers inherit systems. I'd rather build them first so I know what I'm inheriting.
 
 ---
 
 ## Projects
 
-**[log-explainer](https://github.com/sharanch/log-explainer)** — Python · Ollama · GitHub Actions · GHCR  
-AIOps CLI that tails live logs and explains each line in plain English using a local LLM — no data leaves the host. Two-pass severity classifier, sliding-window spike detection, automated incident summaries. Ships as .deb/.rpm/.pkg/.msi via a three-workflow CI/CD pipeline.
+**[log-explainer](https://github.com/sharanch/log-explainer)** — Python · Ollama · GitHub Actions · GHCR
 
-**[go-sre-observatory](https://github.com/sharanch/go-sre-observatory)** — Go · Kubernetes · Prometheus · Grafana · Loki  
-End-to-end observability stack on Kubernetes built around a Go microservice with RED metrics instrumentation and deliberate SLO-breach simulation. Alert pipeline wired end to end: Prometheus → Alertmanager → Slack with severity routing and runbook-linked definitions.
+*During incidents at Oracle I was constantly switching between log viewers, documentation, and AI assistants — copy-pasting to make sense of what was happening. Built this so you can just tail logs over SSH and get plain English explanations locally, without breaking focus or sending data anywhere.*
 
-**[chatops](https://github.com/sharanch/chatops)** — React · Node.js · PostgreSQL · ArgoCD · Helm  
-3-tier application on Kubernetes with full GitOps via ArgoCD — sub-2-minute deploy cycles. Modular Helm charts with per-environment overrides; multi-stage Alpine builds cut image size by ~60%.
+Local LLM-powered log explainer with two-pass severity classification, sliding-window spike detection, and automated incident summaries. Ships as .deb/.rpm/.pkg/.msi via a three-workflow CI/CD pipeline.
 
-**[istio-mesh-demo](https://github.com/sharanch/istio-mesh-demo)** — Istio · Kubernetes · FastAPI · Kiali · Grafana  
-Service mesh with mTLS-encrypted traffic via Envoy sidecars and live canary traffic shifting (100/0 → 50/50 → 0/100). Fault injection validates frontend resilience under degraded backend conditions.
+---
 
-**[postgresql-ha-lab](https://github.com/sharanch/postgres-ha-resiliency-lab)** — CloudNativePG · Kubernetes  
-HA PostgreSQL cluster with RPO < 5s and RTO < 30s, validated via chaos scenarios (pod kill, node drain). Zero data loss across 10+ failure events.
+**[go-sre-observatory](https://github.com/sharanch/go-sre-observatory)** — Go · Kubernetes · Prometheus · Grafana · Loki
 
-**[aws-security-auditor](https://github.com/sharanch/aws-security-best-practices)** — Boto3 · AWS  
-Audits AWS environments against CIS benchmarks — surfaces IAM over-privilege, unrotated keys, and open S3 buckets and security groups.
+*Most engineers never get to build an alerting system from scratch — they inherit one. This is me building one end to end so I actually understand every piece of it.*
+
+Full observability stack on Kubernetes with RED metrics instrumentation, deliberate SLO-breach simulation, and an alert pipeline wired all the way through: Prometheus → Alertmanager → Slack with severity routing and runbook-linked definitions.
+
+---
+
+**[chatops](https://github.com/sharanch/chatops)** — React · Node.js · PostgreSQL · ArgoCD · Helm
+
+*GitOps and single source of truth get thrown around a lot. Built this to demonstrate what they actually mean in practice — every change through Git, ArgoCD reconciles the rest.*
+
+3-tier app on Kubernetes with full GitOps via ArgoCD — sub-2-minute deploy cycles, modular Helm charts with per-environment overrides, path-based CI that only rebuilds affected services.
+
+---
+
+**[istio-mesh-demo](https://github.com/sharanch/istio-mesh-demo)** — Istio · Kubernetes · FastAPI · Kiali · Grafana
+
+*Kubernetes is a vast space and service mesh is one of the parts most engineers skip. Built this to get hands-on with secure service-to-service communication — mTLS, traffic shaping, and what resilience actually looks like under fault injection.*
+
+mTLS-encrypted traffic via Envoy sidecars with live canary shifting (100/0 → 50/50 → 0/100) and fault injection to validate frontend resilience under degraded backend conditions.
+
+---
+
+**[postgresql-ha-lab](https://github.com/sharanch/postgres-ha-resiliency-lab)** — CloudNativePG · Kubernetes
+
+*Wanted to define SLIs and SLOs for a stateful system and actually measure them — not just write them down. Chaos scenarios make the error budget concrete.*
+
+HA PostgreSQL cluster with RPO < 5s and RTO < 30s, validated via automated chaos (pod kill, node drain). Zero data loss across 10+ failure events.
+
+---
+
+**[aws-security-auditor](https://github.com/sharanch/aws-security-best-practices)** — Boto3 · AWS
+
+*Was studying for AWS SAA and kept reading the Well-Architected Framework thinking "how would you actually audit this?" Security and system design are the same problem at different layers.*
+
+CIS benchmark auditor for AWS environments — surfaces IAM over-privilege, unrotated keys, and open S3 buckets and security groups.
 
 ---
 
 ## Stack
 
-**Cloud & Infra** — Kubernetes · Docker · Helm · ArgoCD · OCI · AWS · Terraform · Linux · KVM  
-**Observability** — Prometheus · Grafana · Alertmanager · Loki · Zabbix  
-**Automation** — Python · Go · Bash · Ansible · GitHub Actions · Jenkins · Boto3  
-**Reliability** — Incident command (P0/P1) · Post-mortems · SLO design · Chaos engineering
+Kubernetes · Prometheus · Grafana · Terraform · Ansible · Python · Go · Bash  
+OCI · AWS · ArgoCD · Helm · Loki · Alertmanager · Linux · Docker
 
 ---
 
-Open to SRE · Platform Engineer · DevOps Engineer roles. Reach me at me@sharanch.dev
+me@sharanch.dev · [sharanch.dev](https://sharanch.dev) · Open to SRE and Platform Engineering roles
