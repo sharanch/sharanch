@@ -8,60 +8,76 @@ Most engineers inherit systems. I'd rather build them first so I know what I'm i
 
 ---
 
-## Projects
+## Built from real problems
 
 **[log-explainer](https://github.com/sharanch/log-explainer)** — Python · Ollama · GitHub Actions · GHCR
 
-*During incidents at Oracle I was constantly switching between log viewers, documentation, and AI assistants — copy-pasting to make sense of what was happening. Built this so you can just tail logs over SSH and get plain English explanations locally, without breaking focus or sending data anywhere.*
+*During incidents at Oracle I was constantly switching between log viewers, documentation, and AI assistants — copy-pasting to make sense of what was happening. Built this so you can tail logs over SSH and get plain English explanations locally, without breaking focus or sending data anywhere.*
 
-Local LLM-powered log explainer with two-pass severity classification, sliding-window spike detection, and automated incident summaries. Ships as .deb/.rpm/.pkg/.msi via a three-workflow CI/CD pipeline.
+Local LLM-powered log explainer. Two-pass severity classification, spike detection, automated incident summaries. Ships as .deb/.rpm/.pkg/.msi via a three-workflow CI/CD pipeline.
+
+---
+
+**[operations-autobot](https://github.com/sharanch/operations-autobot)** — Python · Ansible · Jira API
+
+*The actual incident response CLI I built at Oracle — anonymised. Alarm fires in Slack, engineer copies the Jira ID, runs one command. Tool fetches the ticket, identifies the alarm type, runs the right Ansible playbook, posts the mitigation comment, assigns and transitions the ticket. What used to take 45+ minutes averaged under 10.*
+
+Anonymised version of a production tool. The original automated 15+ runbooks across the OCI Compute CloudOps team.
 
 ---
 
 **[go-sre-observatory](https://github.com/sharanch/go-sre-observatory)** — Go · Kubernetes · Prometheus · Grafana · Loki
 
-*Most engineers never get to build an alerting system from scratch — they inherit one. This is me building one end to end so I actually understand every piece of it.*
+*Most engineers never get to build an alerting system from scratch — they inherit one. This is me building one end to end so I actually understand every piece.*
 
-Full observability stack on Kubernetes with RED metrics instrumentation, deliberate SLO-breach simulation, and an alert pipeline wired all the way through: Prometheus → Alertmanager → Slack with severity routing and runbook-linked definitions.
+Full observability stack on Kubernetes. RED metrics, SLO-breach simulation, alert pipeline wired end to end: Prometheus → Alertmanager → Slack with severity routing and runbook-linked definitions.
+
+---
+
+**[postgres-ha-lab](https://github.com/sharanch/postgres-ha-resiliency-lab)** — CloudNativePG · Kubernetes · Prometheus · Grafana
+
+*Wanted to define SLIs and SLOs for a stateful system and actually measure them under failure — not just write them down.*
+
+HA PostgreSQL cluster with RPO < 5s and RTO < 30s, validated via automated chaos scenarios. Includes a custom Grafana SLO dashboard and error budget burn rate alerting. Zero data loss across 10+ failure events — with honest failure data documented.
 
 ---
 
 **[chatops](https://github.com/sharanch/chatops)** — React · Node.js · PostgreSQL · ArgoCD · Helm
 
-*GitOps and single source of truth get thrown around a lot. Built this to demonstrate what they actually mean in practice — every change through Git, ArgoCD reconciles the rest.*
+*GitOps and single source of truth get thrown around a lot. Built this to demonstrate what they actually mean — every change through Git, ArgoCD reconciles the rest.*
 
-3-tier app on Kubernetes with full GitOps via ArgoCD — sub-2-minute deploy cycles, modular Helm charts with per-environment overrides, path-based CI that only rebuilds affected services.
+3-tier app on Kubernetes. Sub-2-minute deploy cycles, path-based CI, non-root containers, graceful shutdown, separate liveness and readiness probes.
 
 ---
 
 **[istio-mesh-demo](https://github.com/sharanch/istio-mesh-demo)** — Istio · Kubernetes · FastAPI · Kiali · Grafana
 
-*Kubernetes is a vast space and service mesh is one of the parts most engineers skip. Built this to get hands-on with secure service-to-service communication — mTLS, traffic shaping, and what resilience actually looks like under fault injection.*
+*Kubernetes is a vast space and service mesh is one of the parts most engineers skip. Built this to get hands-on with secure service-to-service communication.*
 
-mTLS-encrypted traffic via Envoy sidecars with live canary shifting (100/0 → 50/50 → 0/100) and fault injection to validate frontend resilience under degraded backend conditions.
-
----
-
-**[postgresql-ha-lab](https://github.com/sharanch/postgres-ha-resiliency-lab)** — CloudNativePG · Kubernetes
-
-*Wanted to define SLIs and SLOs for a stateful system and actually measure them — not just write them down. Chaos scenarios make the error budget concrete.*
-
-HA PostgreSQL cluster with RPO < 5s and RTO < 30s, validated via automated chaos (pod kill, node drain). Zero data loss across 10+ failure events.
+mTLS via Envoy sidecars, zero application code changes. Live canary shifting (100/0 → 50/50 → 0/100) and fault injection to validate frontend resilience under degraded backend conditions.
 
 ---
 
-**[aws-security-auditor](https://github.com/sharanch/aws-security-best-practices)** — Boto3 · AWS
+**[networking-troubleshooting-runbooks](https://github.com/sharanch/networking-troubleshooting-runbooks)** — Linux · TCP · tcpdump · Python
+
+*Most networking runbooks tell you what commands to run. These explain what's actually happening in the kernel and why.*
+
+7 TCP failure scenarios simulated on Linux — connection refused, timeout, CLOSE_WAIT accumulation, TIME_WAIT exhaustion, retransmissions, port exhaustion, stale keepalives. Each one: what it looks like, why it happens, how to debug it, how to fix it.
+
+---
+
+**[aws-security-best-practices](https://github.com/sharanch/aws-security-best-practices)** — Boto3 · AWS · Bash
 
 *Was studying for AWS SAA and kept reading the Well-Architected Framework thinking "how would you actually audit this?" Security and system design are the same problem at different layers.*
 
-CIS benchmark auditor for AWS environments — surfaces IAM over-privilege, unrotated keys, and open S3 buckets and security groups.
+CIS benchmark coverage across 8 domains — IAM, EC2, VPC, CI/CD, S3, Lambda, RDS, detection and response. Audit scripts that exit with code 1 on critical findings, safe to use as CI/CD gates.
 
 ---
 
 ## Stack
 
 Kubernetes · Prometheus · Grafana · Terraform · Ansible · Python · Go · Bash  
-OCI · AWS · ArgoCD · Helm · Loki · Alertmanager · Linux · Docker
+OCI · AWS · ArgoCD · Helm · Loki · Alertmanager · Linux · Docker · Istio
 
 ---
 
