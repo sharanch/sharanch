@@ -6,6 +6,8 @@ I like understanding how things work — what happens when a kernel panics, why 
 
 Most engineers inherit systems. I'd rather build them first so I know what I'm inheriting.
 
+Currently: sabbatical · building · open to work
+
 ---
 
 ## Built from real problems
@@ -15,14 +17,6 @@ Most engineers inherit systems. I'd rather build them first so I know what I'm i
 *During incidents at Oracle I was constantly switching between log viewers, documentation, and AI assistants — copy-pasting to make sense of what was happening. Built this so you can tail logs over SSH and get plain English explanations locally, without breaking focus or sending data anywhere.*
 
 Local LLM-powered log explainer. Two-pass severity classification, spike detection, automated incident summaries. Ships as .deb/.rpm/.pkg/.msi via a three-workflow CI/CD pipeline.
-
----
-
-**[operations-autobot](https://github.com/sharanch/operations-autobot)** — Python · Ansible · Jira API
-
-*The actual incident response CLI I built at Oracle — anonymised. Alarm fires in Slack, engineer copies the Jira ID, runs one command. Tool fetches the ticket, identifies the alarm type, runs the right Ansible playbook, posts the mitigation comment, assigns and transitions the ticket. What used to take 45+ minutes averaged under 10.*
-
-Anonymised version of a production tool. The original automated 15+ runbooks across the OCI Compute CloudOps team.
 
 ---
 
@@ -74,6 +68,12 @@ CIS benchmark coverage across 8 domains — IAM, EC2, VPC, CI/CD, S3, Lambda, RD
 
 ---
 
+**[operations-autobot](https://github.com/sharanch/operations-autobot)** — Python · Ansible · Jira API
+
+*The actual incident response CLI I built at Oracle — anonymised. Alarm fires in Slack, engineer copies the Jira ID, runs one command. Tool fetches the ticket, identifies the alarm type, runs the right Ansible playbook, posts the mitigation comment, assigns and transitions the ticket. What used to take 45+ minutes averaged under 10.*
+
+Anonymised version of a production tool. The original automated 15+ runbooks across the OCI Compute CloudOps team.
+
 ## Stack
 
 Kubernetes · Prometheus · Grafana · Terraform · Ansible · Python · Go · Bash  
@@ -81,4 +81,4 @@ OCI · AWS · ArgoCD · Helm · Loki · Alertmanager · Linux · Docker · Istio
 
 ---
 
-me@sharanch.dev · [sharanch.dev](https://sharanch.dev) · Open to SRE and Platform Engineering roles
+me@sharanch.dev · [sharanch.dev](https://sharanch.dev) · Open to SRE and Platform Engineering roles · Hyderabad · Open to remote
