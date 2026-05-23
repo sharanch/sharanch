@@ -6,17 +6,25 @@ I like understanding how things work — what happens when a kernel panics, why 
 
 Most engineers inherit systems. I'd rather build them first so I know what I'm inheriting.
 
-Currently: sabbatical · building · open to work
+**Currently: open to SRE and Platform Engineering roles · building · Hyderabad · open to remote**
 
 ---
 
 ## Built from real problems
 
-**[log-explainer](https://github.com/sharanch/log-explainer)** — Python · Ollama · GitHub Actions · GHCR
+**[log-explainer](https://github.com/sharanch/log-explainer)** — Python · Ollama · Elasticsearch · Filebeat · Kibana · GitHub Actions · GHCR
 
 *During incidents at Oracle I was constantly switching between log viewers, documentation, and AI assistants — copy-pasting to make sense of what was happening. Built this so you can tail logs over SSH and get plain English explanations locally, without breaking focus or sending data anywhere.*
 
-Local LLM-powered log explainer. Two-pass severity classification, spike detection, automated incident summaries. Ships as .deb/.rpm/.pkg/.msi via a three-workflow CI/CD pipeline.
+Local LLM-powered log explainer. Two-pass severity classification, spike detection, automated incident summaries. Ships as .deb/.rpm/.pkg/.msi via a three-workflow CI/CD pipeline. ELK integration (`--elk-output`) ships LLM-enriched explanations to Elasticsearch via Filebeat — raw logs and AI context queryable together in Kibana.
+
+---
+
+**[inkwell-complete](https://github.com/sharanch/inkwell-complete)** — Go · React · Kubernetes · ArgoCD · Istio · PostgreSQL · Redis · GitHub Actions
+
+*Most microservices demos are toy services that share a database and call it distributed. Wanted to build one that actually enforces service boundaries — separate databases, gateway-level auth, real K8s infra patterns.*
+
+Privacy-first blogging platform on Go microservices — API gateway, auth, blog, feed, and notify services, each with its own Postgres instance. Passwordless OTP auth with Redis TTL. K8s deployment with production-pattern manifests: HPA, PDB, mTLS via Istio, cert-manager, ArgoCD GitOps. Prometheus RED metrics on the gateway.
 
 ---
 
@@ -74,10 +82,13 @@ CIS benchmark coverage across 8 domains — IAM, EC2, VPC, CI/CD, S3, Lambda, RD
 
 Anonymised version of a production tool. The original automated 15+ runbooks across the OCI Compute CloudOps team.
 
+---
+
 ## Stack
 
 Kubernetes · Prometheus · Grafana · Terraform · Ansible · Python · Go · Bash  
-OCI · AWS · ArgoCD · Helm · Loki · Alertmanager · Linux · Docker · Istio
+OCI · AWS · ArgoCD · Helm · Loki · Alertmanager · Elasticsearch · Filebeat · Kibana  
+Linux · Docker · Istio
 
 ---
 
